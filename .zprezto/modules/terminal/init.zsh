@@ -10,6 +10,13 @@ if [[ "$TERM" == (dumb|linux|*bsd*) ]]; then
   return 1
 fi
 
+# If this is a 256 color terminal, well then.
+if [[ "$TERM" == xterm ]]; then
+  if [ -e /usr/share/terminfo/*/xterm-256color ]; then
+    export TERM=xterm-256color
+  fi
+fi
+
 # Sets the terminal or terminal multiplexer window title.
 function set-window-title {
   local title_format{,ted}
@@ -121,4 +128,3 @@ then
 	# Sets the tab and window titles before command execution.
 	add-zsh-hook preexec _terminal-set-titles-with-command
 fi
-
