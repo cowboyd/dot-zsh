@@ -1,3 +1,5 @@
-!.zprezto/*.zwc
-!.zprezto/*.zwc.old
-!.zprezto/modules/*/cache.zsh
+*
+!.gitignore.d/zsh
+!.zprezto/*
+/.zprezto/*.zwc.old
+/.zprezto/modules/*/cache.zsh
