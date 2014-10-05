@@ -10,7 +10,7 @@ if [[ ! -d "$HOME/.cask" ]]; then
 fi
 
 
-export EDITOR='emacsclient -t --alternate-editor= $@'
+export EDITOR="emacsclient -t --alternate-editor="
 export VISUAL=$EDITOR
 
 # Prepend Cask bin directory.
@@ -30,5 +30,5 @@ alias caI='cask init'
 alias cae='cask exec'
 
 #server
-alias em='emacsclient -nc $@'
+alias em='emacsclient -nc'
 alias ek='emacsclient -e "(kill-emacs 1)"'
