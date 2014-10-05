@@ -31,4 +31,6 @@ alias cae='cask exec'
 
 #server
 alias em='emacsclient -nc'
-alias ek='emacsclient -e "(kill-emacs 1)"'
+alias es='emacs -nw --daemon'
+alias ek='emacsclient -e "(kill-emacs 0)"'
+alias er='ek;es'
