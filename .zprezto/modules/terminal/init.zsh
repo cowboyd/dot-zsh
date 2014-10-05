@@ -12,9 +12,7 @@ fi
 
 # If this is a 256 color terminal, well then.
 if [[ "$TERM" == xterm ]]; then
-  if [ -e /usr/share/terminfo/*/xterm-256color ]; then
-    export TERM=xterm-256color
-  fi
+  export TERM=xterm-256color
 fi
 
 # Sets the terminal or terminal multiplexer window title.
