@@ -2,5 +2,10 @@
 !.gitignore.d
 !.gitignore.d/zsh
 !.zprezto/*
+!.zprezto/.projectile
+!.zprezto/runcoms
+!.zprezto/runcoms/*
+!.zprezto/modules
+!.zprezto/modules/*
 .zprezto/*.zwc.old
 .zprezto/modules/*/cache.zsh
